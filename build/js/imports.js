@@ -1,0 +1,11 @@
+//import('vendor/modernizr.js');
+//import('vendor/howler.js');
+//import('game/g.js');
+//import('game/storage.js');
+//import('game/group.js');
+//import('game/pool.js');
+//import('game/util.js');
+//import('entities/enemy.js');
+//import('entities/hero.js');
+//import('states/play.js');
+//import('game.js');

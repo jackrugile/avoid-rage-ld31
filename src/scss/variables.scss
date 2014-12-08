@@ -1,0 +1,14 @@
+$width: 800px;
+$height: 800px;
+$size: 60px;
+
+//$color-bg: #000;
+$color-bg: url(../images/texture.png), radial-gradient(#222 0%, #000 100%);
+$color-game: linear-gradient(#444 0%, #222 100%);
+//$color-game: #222;
+$color-game-shadow: #1e1e1e;
+$color-lines: rgba(255, 255, 255, 0.05);
+$color-lines-active: rgba(255, 255, 255, 0.2);
+$color-tile: rgba(255, 255, 255, 0.1);
+$color-tile-current: rgba(255, 255, 255, 0.3);
+$color-tile-current-shadow: rgba(255, 255, 255, 0.3);

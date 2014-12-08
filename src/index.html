@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Avoid Rage | Ludum Dare 31</title>
+		<meta name="description" content="Minimal reflex game where you must avoid enemies coming at you from opposing tracks - Made for Ludum Dare 31 - Entire Game on One Screen">
+		<meta property="og:url" content="http://jackrugile.com/avoid-rager">
+		<meta property="og:title" content="Avoid Rage | Ludum Dare 31">
+		<meta property="og:description" content="Minimal reflex game where you must avoid enemies coming at you from opposing tracks - Made for Ludum Dare 31 - Entire Game on One Screen">
+		<meta property="og:site_name" content="Avoid Rage">
+		<meta property="og:image" content="http://jackrugile.com/avoid-rage/images/fb.png?v=1">
+		<meta property="og:type" content="website">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?v=1">
+		<!--<link href="css/main.min.css" rel="stylesheet">-->
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="game">
+			<div class="lines">
+				<div class="line line-vertical line-0"></div>
+				<div class="line line-vertical line-1"></div>
+				<div class="line line-vertical line-2"></div>
+				<div class="line line-horizontal line-0"></div>
+				<div class="line line-horizontal line-1"></div>
+				<div class="line line-horizontal line-2"></div>
+			</div>
+			<div class="tiles">
+				<div class="tile tile-0"><div class="tile-inner"></div></div>
+				<div class="tile tile-1"><div class="tile-inner"></div></div>
+				<div class="tile tile-2"><div class="tile-inner"></div></div>
+				<div class="tile tile-3"><div class="tile-inner"></div></div>
+				<div class="tile tile-4 current"><div class="tile-inner"></div></div>
+				<div class="tile tile-5"><div class="tile-inner"></div></div>
+				<div class="tile tile-6"><div class="tile-inner"></div></div>
+				<div class="tile tile-7"><div class="tile-inner"></div></div>
+				<div class="tile tile-8"><div class="tile-inner"></div></div>
+			</div>
+			<div class="overlay"></div>
+			<div class="texture"></div>
+			<div class="ui">
+				<div class="title-wrap">
+					<div class="title-top">Avoid</div>
+					<div class="title-bot">Rage</div>
+				</div>
+				<div class="score-wrap">
+					<div class="score score-current">
+						<span class="score-label">Score</span>
+						<span class="score-text score-current-text">000</span>
+					</div>
+					<div class="score score-best">
+						<span class="score-label">Best</span>
+						<span class="score-text score-best-text">000</span>
+					</div>
+				</div>
+				<div class="credits-wrap">
+					Built for <a href="http://ludumdare.com/compo/" target="_blank">Ludum Dare</a> 31<br>
+					Entire Game on One Screen<br>
+					Made by <a href="http://jackrugile.com" target="_blank">Jack Rugile</a><br>
+				</div>
+				<div class="stats-wrap">
+					<span class="stats-label">Moves</span> <span class="stats-text stats-moves-text">0</span><br>
+					<span class="stats-label">Deaths</span> <span class="stats-text stats-deaths-text">0</span><br>
+					<span class="stats-label">Time</span> <span class="stats-text stats-time-text">00:00:00</span>
+				</div>
+			</div>
+			<div class="instructions">
+				Avoid Enemies<br>
+				<span class="entypo-up"></span> <span class="entypo-right"></span> <span class="entypo-down"></span> <span class="entypo-left"></span> or WASD to Move
+			</div>
+		</div>
+		<!--<script src="js/main.min.js"></script>-->
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/vendor/howler.js"></script>
+		<script src="js/game/g.js"></script>
+		<script src="js/game/storage.js"></script>
+		<script src="js/game/group.js"></script>
+		<script src="js/game/pool.js"></script>
+		<script src="js/game/util.js"></script>
+		<script src="js/entities/enemy.js"></script>
+		<script src="js/entities/hero.js"></script>
+		<script src="js/states/play.js"></script>
+		<script src="js/game.js"></script>
+	</body>
+</html>
