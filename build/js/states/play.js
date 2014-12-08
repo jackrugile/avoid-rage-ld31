@@ -93,14 +93,14 @@ StatePlay.prototype.restart = function() {
 	// spawner
 	this.spawner = {
 		tick: 0,
-		max: 45,
-		delay: 45
+		max: 40,
+		delay: 40
 	};
 
 	// level
 	this.level = {
 		tick: 0,
-		max: 300
+		max: 250
 	};
 
 	// track lines
@@ -172,7 +172,7 @@ StatePlay.prototype.stepLevel = function() {
 	if( this.level.tick >= this.level.max ) {
 		this.level.tick = 0;
 		this.spawner.max -= 1;
-		this.velocity += 0.35;
+		this.velocity += 0.4;
 		this.hue += 30;
 		g.css( this.dom.overlay, {
 			'background': 'hsla(' + this.hue + ', 100%, 50%, 0.2)'
